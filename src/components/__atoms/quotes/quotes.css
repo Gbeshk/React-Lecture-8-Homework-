@@ -1,0 +1,61 @@
+.quotesdiv {
+  width: 350px;
+  height: auto;
+  padding-bottom: 18px;
+  padding-top: 18px;
+  flex-shrink: 0;
+  border-bottom: 1px solid #e8e8ea;
+}
+.quote {
+  color: #4b4c5f;
+  font-family: "Kumbh Sans";
+  font-size: 14px;
+  font-weight: 400;
+  width: 300px;
+}
+.quotesandarrow {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  cursor: pointer;
+}
+.quotehidden {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+.quoteappear {
+  max-height: 500px;
+  transition: max-height 2s ease-in-out, opacity 1.5s ease-in-out;
+  opacity: 1;
+  color: #787887;
+  font-family: "Kumbh Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  margin-top: 13px;
+}
+#blackauthor {
+  color: #1e1f36;
+  font-family: "Kumbh Sans";
+  font-size: 14px;
+  font-weight: 700;
+}
+#arrowrotate {
+  rotate: 180deg;
+  transition: 1s;
+}
+.quote:hover {
+  color: #f47b56;
+  transition: 1s;
+}
+ul {
+  margin-top: 10px;
+}
+@media (max-width: 900px) {
+  .quotesdiv {
+    width: 279px;
+    margin-left: -16px;
+  }
+}

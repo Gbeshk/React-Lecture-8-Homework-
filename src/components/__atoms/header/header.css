@@ -1,0 +1,15 @@
+.header {
+  color: #1e1f36;
+  font-family: "Kumbh Sans";
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 65px;
+  margin-left: 37px;
+}
+@media (max-width: 900px) {
+  .header {
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 132px;
+  }
+}
