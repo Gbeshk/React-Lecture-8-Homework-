@@ -33,7 +33,11 @@ function Quotes() {
                 key={key}
                 className="quotesdiv"
                 onClick={() => {
-                  setX(key);
+                  if (x == key) {
+                    setX(null);
+                  } else {
+                    setX(key);
+                  }
                 }}
               >
                 <div className="quotesandarrow">

@@ -1,5 +1,6 @@
 .quotesdiv {
-  width: 350px;
+  max-width: 350px;
+  width: 100%;
   height: auto;
   padding-bottom: 18px;
   padding-top: 18px;
@@ -11,7 +12,8 @@
   font-family: "Kumbh Sans";
   font-size: 14px;
   font-weight: 400;
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
 }
 .quotesandarrow {
   display: flex;
@@ -23,6 +25,7 @@
   max-height: 0;
   overflow: hidden;
   opacity: 0;
+  /* transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out; */
 }
 .quoteappear {
   max-height: 500px;
@@ -53,9 +56,12 @@
 ul {
   margin-top: 10px;
 }
-@media (max-width: 900px) {
+
+@media (max-width: 820px) {
   .quotesdiv {
     width: 279px;
     margin-left: -16px;
+    padding-bottom: 15px;
+    padding-top: 15px;
   }
 }
